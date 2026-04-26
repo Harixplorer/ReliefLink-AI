@@ -145,9 +145,9 @@ This enables faster response, better resource allocation, and improved crisis ma
 
 ## 👥 Team Members
 
-* **Konduru Rithvik**
+* **Harshith Redy Jaggavarapu**
 * **Seelam Bhavana**
-* **Harshith Reddy Jaggavarapu (Leader)**
+* **Konduru Rithvik**
 
 ---
 
