@@ -1,6 +1,6 @@
 const fetch = (...args) =>
   import("node-fetch").then(({ default: fetch }) => fetch(...args));
-
+require('dotenv').config();
 const OPENROUTER_API_KEY = process.env.OPENROUTER_API_KEY;// ⚠️ replace with NEW key (not leaked one)
 
 // 🔥 CALL OPENROUTER AI
