@@ -6,43 +6,30 @@
 
 ## 🧠 Overview
 
-ReliefLink AI+ is an intelligent platform that enables users to report real-world issues, automatically classifies them using AI, and displays them in a live operations dashboard for faster and smarter decision-making.
+**ReliefLink AI+** is a full-stack AI-powered platform that enables users to report real-world issues such as disasters, food shortages, and medical emergencies.
 
-The system shifts traditional reporting from reactive to proactive by highlighting critical alerts and providing real-time insights.
+The system:
+
+* Instantly classifies issues using AI
+* Assigns priority levels
+* Matches the best volunteer
+* Displays everything in a **live operations dashboard**
+
+👉 Built to shift systems from **reactive → proactive decision-making**
 
 ---
 
 ## ✨ Key Features
 
-* 🤖 **AI Issue Classification** (category + priority detection)
-* ⚡ **Real-Time Dashboard Updates**
-* 🚨 **Critical Alerts Highlighting**
-* 📊 **Interactive Operations Dashboard**
-* 🎯 **Priority & Status Filtering**
-* 🧠 **AI Preview Before Submission**
-* 🎤 **Voice Input for Reporting**
-* 🎨 **Modern UI with Animations (Framer Motion)**
-
----
-
-## 🖥️ Application Screens
-
-### 🏠 Home Page
-
-* Live system status
-* Clear call-to-action for reporting issues
-
-### 📝 Report Issue Page
-
-* AI-assisted issue description
-* Auto-detection of category
-* Voice input support
-
-### 📊 Dashboard
-
-* Live issue tracking
-* Critical alerts panel
-* Real-time statistics and insights
+* 🤖 AI-powered issue classification (category + priority)
+* ⚡ Real-time dashboard updates (no refresh feel)
+* 🚨 Critical alert highlighting
+* 📊 Interactive operations dashboard
+* 🎯 Priority & status filtering
+* 🧠 AI preview before submission
+* 🎤 Voice input support
+* 📈 Risk prediction & trend detection
+* 🎨 Premium UI (dark theme + animations)
 
 ---
 
@@ -62,28 +49,51 @@ The system shifts traditional reporting from reactive to proactive by highlighti
 
 ---
 
-## ⚙️ Tech Stack
+## 🏗️ Architecture
+
+* **Frontend** → React + Vite
+* **Backend** → Node.js + Express
+* **Database** → Supabase (PostgreSQL)
+* **AI Layer** → Python + OpenRouter (LLMs)
+
+---
+
+## 🧰 Tech Stack
 
 ### Frontend
 
-* React.js
-* Tailwind CSS
+* React
+* Vite
 * Framer Motion
+* Tailwind / Custom CSS
+* Lucide Icons
 
 ### Backend
 
 * Node.js
-* Express.js
+* Express
+* Supabase SDK
 
-### AI Layer
+### AI Module
 
-* Custom classification logic
+* Python
+* OpenRouter API (GPT / Llama models)
+* Rule-based fallback engine
+
+---
+
+## 🔌 API Endpoints
+
+| Method | Endpoint      | Description                      |
+| ------ | ------------- | -------------------------------- |
+| POST   | `/api/report` | Submit issue → AI classification |
+| GET    | `/api/issues` | Fetch all issues                 |
 
 ---
 
 ## 🚀 How to Run
 
-### 1. Clone the repository
+### 1. Clone repo
 
 ```bash
 git clone https://github.com/Harixplorer/ReliefLink-AI.git
@@ -98,16 +108,14 @@ cd frontend && npm install
 cd ../backend && npm install
 ```
 
-### 3. Run the application
-
-#### Start Backend
+### 3. Run backend
 
 ```bash
 cd backend
 node server.js
 ```
 
-#### Start Frontend
+### 4. Run frontend
 
 ```bash
 cd frontend
@@ -116,45 +124,61 @@ npm run dev
 
 ---
 
-## 💡 Problem Statement
+## 🔐 Environment Variables
 
-Traditional issue reporting systems are slow, reactive, and lack prioritization. Critical problems often get buried in large volumes of reports.
+```env
+OPENROUTER_API_KEY=your_key
+SUPABASE_URL=your_url
+SUPABASE_KEY=your_key
+```
 
 ---
 
-## 🎯 Our Solution
+## 💡 Problem
 
-ReliefLink AI+ introduces:
+Traditional systems:
+
+* Slow
+* Reactive
+* No prioritization
+
+Critical issues often get ignored.
+
+---
+
+## 🎯 Solution
+
+ReliefLink AI+ provides:
 
 * Instant AI classification
-* Priority-based alerting
-* Real-time monitoring dashboard
+* Priority-based alerts
+* Real-time dashboard
 
-This enables faster response, better resource allocation, and improved crisis management.
+👉 Enabling faster and smarter responses.
 
 ---
 
-## 🔮 Future Enhancements
+## 🔮 Future Improvements
 
-* 🌍 Live map integration
+* 🌍 Map-based visualization
 * 📡 Real-time notifications
-* 🤝 Volunteer assignment system
-* 📈 Predictive analytics for crisis detection
+* 🤝 Volunteer coordination system
+* 📈 Predictive analytics
 
 ---
 
-## 👥 Team Members
+## 👥 Team
 
-* **Harshith Redy Jaggavarapu**
-* **Seelam Bhavana**
-* **Konduru Rithvik**
-
----
-
-## 🏁 Conclusion
-
-ReliefLink AI+ demonstrates how AI and real-time systems can significantly improve disaster response and community issue management.
+* Konduru Rithvik
+* Seelam Bhavana
+* Harshith Reddy Jaggavarapu 
 
 ---
 
-⭐ If you found this project interesting, consider giving it a star!
+## 🏁 Final Note
+
+This project demonstrates how AI + real-time systems can significantly improve disaster response and community issue management.
+
+---
+
+
